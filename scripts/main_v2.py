@@ -63,6 +63,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://v.poker2025.dpdns.org/9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
+    "https://poker2026.ccwu.cc/sub?token=cf686c16ebc945ced7fc69a74eaa05d5",
 ]
 
 OUTPUT_DIR = "output"
