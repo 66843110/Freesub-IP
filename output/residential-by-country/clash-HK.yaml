@@ -5,17 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: xgwhcrqwlhfaqqn.cfooov.xyz
-  port: 48712
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 41341
   udp: true
   type: vless
   uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: gNL3X6L6kuclvSmA0qXWHKZCIFW1wGYr4AF0YN6uKkg
-    short-id: 28e1ea46d658
-  servername: www.lamer.com.hk
+    public-key: HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY
+    short-id: b93f2026953855c5
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

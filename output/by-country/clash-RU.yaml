@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+  server: z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+  type: trojan
+  password: Telegram_healer_config
+  sni: Z6Y-Daox0HyHdTDy.R720KPBYx2L3I406.WorKERS.DEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/ZizffFwMuYF9RUfnS3Ad2bGqcOrQk?ed=2560
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 91.240.86.70
   port: 22443
@@ -26,7 +30,7 @@ proxies:
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 46.8.200.91
   port: 443
