@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe",
-      "server": "104.24.143.217",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "206.1.98.86",
+      "server_port": 18443,
+      "uuid": "33e40dec-442b-46b2-b9b3-be1848ce7df8",
       "tls": {
         "enabled": true,
-        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
-        "insecure": false,
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYVNm1Huc5MMhVUBDAO5O7O7mjZXjxESWUQzVPIoqjM",
+          "short_id": "ca"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
-        "headers": {
-          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "@tunelm2mvpn@tunelm2mvpn@tunelm2mvpn"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
