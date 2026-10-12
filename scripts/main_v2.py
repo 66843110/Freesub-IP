@@ -65,9 +65,9 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://v.poker2025.dpdns.org/9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
     "https://poker2026.ccwu.cc/sub?token=cf686c16ebc945ced7fc69a74eaa05d5",
-#    "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
-#    "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-#    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
+    "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
+    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
 OUTPUT_DIR = "output"
@@ -1630,7 +1630,10 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
 def outbound_to_clash(node: dict, name: str) -> dict:
     """sing-box outbound → Clash (Meta/mihomo) proxy dict"""
     t = node.get("type")
-    server, port = node["server"], node["server_port"]
+#    server, port = node["server"], node["server_port"]
+    server = node.get("server")
+#   优先获取 server_port，如果没有，尝试获取 port，再没有则给一个默认值 443
+    port = node.get("server_port") or node.get("port") or 443
     proxy = {"name": name, "server": server, "port": port, "udp": True}
 
     if t == "vless":
