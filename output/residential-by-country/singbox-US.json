@@ -6,17 +6,20 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "789156.xyz",
+      "server": "ld.235231.xyz",
       "server_port": 443,
-      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
       "tls": {
         "enabled": true,
-        "server_name": "789156.xyz",
+        "server_name": "ld.235231.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed"
+        "path": "/fp=chrome ",
+        "headers": {
+          "Host": "ld.235231.xyz"
+        }
       }
     },
     {

@@ -5,17 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 789156.xyz
+  server: ld.235231.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
   tls: true
-  servername: 789156.xyz
+  servername: ld.235231.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed
+    path: '/fp=chrome '
+    headers:
+      Host: ld.235231.xyz
 proxy-groups:
 - name: PROXIES
   type: select

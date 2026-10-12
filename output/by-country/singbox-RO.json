@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "77.74.123.103",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
       "server": "103.76.131.89",
       "server_port": 443,
       "uuid": "62610fc6-8333-41f9-9258-08915e4343ab",
@@ -37,16 +25,44 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "server": "77.74.123.105",
+      "server_port": 8443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-test-italy.dynuddns.net",
+        "insecure": false
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
-      "server": "154.46.31.106",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
+      "server": "hy2-new.aspidnet.xyz",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
       "server": "77.74.123.110",
       "server_port": 995,
       "uuid": "d5eb7d7c-244c-46bd-87c9-ea1abfad915c",
@@ -67,7 +83,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -83,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
       "server": "82.152.132.120",
       "server_port": 443,
       "uuid": "3e0c1fbf-467a-49d7-abd2-3a158628f3d0",
@@ -103,45 +119,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 08 - xiaohe",
-      "server": "herbalromania.top",
-      "server_port": 443,
-      "uuid": "62610fc6-8333-41f9-9258-08915e4343ab",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "herbalromania.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EMM388R9SzURuXjJiD8vzI8pzGaaTdJM5UvRUAuxEg4",
-          "short_id": "e27ba09622ff673a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -162,22 +141,43 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
+      "server": "103.126.51.58",
+      "server_port": 995,
+      "uuid": "1fc575d3-81bb-44d5-9efa-4131c7cc677a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ocober-romania-new.yyuyy.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/api/v1",
+        "host": "ocober-romania-new.yyuyy.com"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
-      "server": "146.70.124.85",
+      "server": "herbalromania.top",
       "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "uuid": "62610fc6-8333-41f9-9258-08915e4343ab",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "herbalromania.top",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
+          "public_key": "EMM388R9SzURuXjJiD8vzI8pzGaaTdJM5UvRUAuxEg4",
+          "short_id": "e27ba09622ff673a"
         }
       }
     },
@@ -211,14 +211,35 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 13 - xiaohe",
+      "server": "146.70.124.85",
+      "server_port": 443,
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
+          "short_id": "fe24f8a0a560056e"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 14 - xiaohe",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "185.156.44.99",
         "insecure": true
       }
     },
@@ -239,7 +260,8 @@
         "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 11 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 12 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 13 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 13 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 14 - xiaohe"
       ]
     },
     {
@@ -258,7 +280,8 @@
         "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 11 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 12 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 13 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 13 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 14 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
