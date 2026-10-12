@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: z5n1.vpnpolar.online
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  server: 107.189.26.160
   port: 443
   udp: true
-  type: vless
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
-  tls: true
-  servername: z5n1.vpnpolar.online
+  type: trojan
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  sni: mfyousheng.nl.eu.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
+    path: /tjwsLhx0SFASG4l9FERJ1g
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 rules:
 - MATCH,PROXIES
