@@ -12,10 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "wss.zazazuza.ru",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "insecure": false
       },
       "transport": {
         "type": "ws",
