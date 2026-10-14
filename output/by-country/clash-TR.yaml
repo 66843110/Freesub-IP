@@ -19,6 +19,15 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 213.156.152.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5ff0c78-b144-461d-910e-c1b8e8438726
+  tls: true
+  servername: e4yuzs04e4b4.dop666.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
   port: 443
   udp: true
@@ -31,7 +40,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -43,7 +52,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 201.34.148.44
   port: 443
   udp: true
@@ -56,7 +65,20 @@ proxies:
     short-id: abbcd128
   servername: sun9-38.userapi.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   server: 85.192.48.142
   port: 443
   udp: true
@@ -68,9 +90,9 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: tr2.h1cloud.net
+  client-fingerprint: ''
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  server: 45.133.151.176
   port: 25375
   udp: true
   type: vless
@@ -84,12 +106,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 05195f917c82
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +118,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,5 +131,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES
