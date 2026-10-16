@@ -23,8 +23,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -37,7 +35,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -50,7 +48,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -62,6 +60,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
   server: 109.248.170.119
   port: 13447

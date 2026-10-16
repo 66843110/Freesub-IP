@@ -24,10 +24,7 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
+        "path": "/vmess/"
       }
     },
     {
@@ -41,7 +38,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "google.com"
         }
       }
     },
@@ -56,7 +53,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
+          "Host": "google.com"
         }
       }
     },
@@ -69,7 +66,10 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+        }
       }
     },
     {
