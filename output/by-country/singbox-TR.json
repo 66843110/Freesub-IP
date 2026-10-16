@@ -27,26 +27,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
       "server": "62.60.233.157",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -55,7 +35,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -69,27 +49,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -108,6 +69,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+      "server": "api.apira98.org",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -115,8 +84,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaohe"
       ]
     },
     {
@@ -126,8 +94,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
