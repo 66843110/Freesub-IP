@@ -26,8 +26,18 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
   servername: tcpswed1.figurapn.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -38,32 +48,12 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: swe.wizard.select
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: qq
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: mui.firzav.ir
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: edge-lab-b.10media.top
+  server: 45.12.63.219
   port: 443
   udp: true
   type: vless
@@ -71,17 +61,22 @@ proxies:
   tls: true
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: hy-se.bypassme.online
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 94.143.231.146
   port: 443
   udp: true
-  type: hysteria2
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  sni: hy-se.bypassme.online
-  skip-cert-verify: false
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,7 +88,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,6 +99,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES
