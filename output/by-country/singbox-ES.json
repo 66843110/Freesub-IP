@@ -7,17 +7,19 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
       "server": "5.188.181.201",
-      "server_port": 9005,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "ZET59LF6DvCC8KVt"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "5.188.181.201",
-      "server_port": 9019,
-      "method": "aes-256-cfb",
-      "password": "GA9KzeEgvfxNrgmM"
+      "server": "18.100.47.39",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
     },
     {
       "type": "vless",
@@ -30,7 +32,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
