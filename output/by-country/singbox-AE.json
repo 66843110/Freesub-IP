@@ -27,46 +27,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "157.228.149.211",
-      "server_port": 2054,
-      "uuid": "cdc72f62-1697-4644-b5a9-ca6308584c86",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloud.ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UgJ0ENqGGX-ch2mLdRZiw67OhU3Dqz7rDYCPKcdnn0w",
-          "short_id": "d3d9e08a74807928"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -79,32 +39,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-      "server": "31.59.210.26",
-      "server_port": 2088,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "www.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg",
-          "short_id": "b1ad165f903c62fe"
-        }
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true
       },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
       "server": "31.59.210.32",
       "server_port": 443,
       "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
@@ -113,7 +65,7 @@
         "server_name": "www.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -128,7 +80,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
       "server": "31.59.210.37",
       "server_port": 443,
       "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
@@ -152,8 +104,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - xiaohe",
-      "server": "uae.unixzone.us",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+      "server": "31.59.210.25",
+      "server_port": 2087,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY",
+          "short_id": "ed435c242097fd05"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaohe",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -165,24 +141,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇪 阿联酋 (UAE) 09 - xiaohe",
-      "server": "200.181.82.91",
-      "server_port": 28740,
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - xiaohe",
       "server": "45.59.120.217",
       "server_port": 443,
       "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
@@ -201,12 +161,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 11 - xiaohe",
-      "server": "200.181.82.91",
-      "server_port": 21737,
-      "method": "aes-256-gcm",
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - xiaohe",
+      "server": "157.228.149.211",
+      "server_port": 2054,
+      "uuid": "cdc72f62-1697-4644-b5a9-ca6308584c86",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloud.ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UgJ0ENqGGX-ch2mLdRZiw67OhU3Dqz7rDYCPKcdnn0w",
+          "short_id": "d3d9e08a74807928"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "selector",
@@ -221,9 +197,7 @@
         "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 07 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 08 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 09 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 10 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 11 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 09 - xiaohe"
       ]
     },
     {
@@ -238,9 +212,7 @@
         "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 07 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 08 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 09 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 10 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 11 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
