@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: 172.66.130.80
+  server: 104.17.151.168
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 162.159.237.209
+  server: 104.17.112.191
   port: 443
   udp: true
   type: vless
@@ -35,7 +35,7 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 172.66.159.202
+  server: 104.25.51.7
   port: 443
   udp: true
   type: vless
@@ -50,7 +50,7 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 172.66.208.240
+  server: 104.19.255.254
   port: 443
   udp: true
   type: vless
@@ -65,7 +65,7 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: 172.66.204.166
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vless
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  server: 162.159.237.115
+  server: 104.25.189.108
   port: 443
   udp: true
   type: vless
@@ -95,102 +95,6 @@ proxies:
     headers:
       Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: 104.25.244.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  server: 104.17.147.72
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  server: 104.17.152.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  server: 172.66.135.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
-  server: 104.17.151.68
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  server: 141.164.45.187
-  port: 9090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
-  server: 141.164.45.187
-  port: 6697
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
   server: 140.238.2.250
   port: 443
   udp: true
@@ -198,15 +102,55 @@ proxies:
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
-  server: 152.70.237.123
-  port: 2053
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  server: 141.164.45.187
+  port: 8091
   udp: true
-  type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  server: 141.164.45.187
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  server: 49.254.204.134
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  server: 141.164.45.187
+  port: 5001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  server: 211.178.105.134
+  port: 6123
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -214,43 +158,31 @@ proxies:
   password: 1671a252e2a97dc2bda4e515475931da
   sni: 132.226.226.189
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
-  server: cf.877771.xyz
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
-  server: 3.39.4.109
-  port: 13672
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  server: 146.56.112.110
+  port: 8888
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 'off'
+  sni: 152-67-200-82.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -262,8 +194,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
   server: 64.176.231.183
   port: 443
   udp: true
@@ -275,8 +207,29 @@ proxies:
     public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
     short-id: ca193e889d958f81
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -287,16 +240,8 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -304,7 +249,14 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  server: 141.164.45.187
+  port: 9090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
   server: jp4.998998.best
   port: 443
   udp: true
@@ -320,20 +272,27 @@ proxies:
     path: /vvvvvvvvv
     headers:
       Host: nat12.9966338.xyz
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
+  server: 141.164.45.187
+  port: 6697
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
 - name: 🇰🇷 韩国 (South Korea) 27 - xiaohe
   server: 141.164.45.187
-  port: 8119
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: RexnBgU7EV5ADxG
 - name: 🇰🇷 韩国 (South Korea) 28 - xiaohe
   server: 141.164.45.187
-  port: 5498
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
