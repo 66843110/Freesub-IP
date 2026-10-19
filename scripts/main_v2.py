@@ -63,7 +63,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
-    "https://v.poker2025.dpdns.org/9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
+    "https://v.poker2025.dpdns.org/9ca218c0-e97b-4a8a-a345-af005a0ae3e5/sub",
     "https://poker2026.ccwu.cc/sub?token=cf686c16ebc945ced7fc69a74eaa05d5",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
