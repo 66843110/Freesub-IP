@@ -5,40 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 172.64.149.226
-  port: 443
+  server: 183.109.131.75
+  port: 20086
   udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

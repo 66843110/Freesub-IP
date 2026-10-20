@@ -18,20 +18,6 @@ proxies:
   servername: bilibili-vn.biliimg.com
   client-fingerprint: chrome
 - name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  server: 172.67.168.158
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
-  tls: true
-  servername: vn11vina.210z.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessvina
-    headers:
-      Host: vn11vina.210z.dev
-- name: 🇻🇳 越南 (Vietnam) 03 - xiaohe
   server: 150.95.109.109
   port: 2086
   udp: true
@@ -44,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
   - 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
   - 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 rules:
 - MATCH,PROXIES
