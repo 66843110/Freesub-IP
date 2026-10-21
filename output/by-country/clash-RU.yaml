@@ -15,14 +15,14 @@ proxies:
     public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
     short-id: ce1dc482
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+  server: 46.17.44.216
+  port: 18443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 113.30.154.239
   port: 8443
@@ -36,13 +36,6 @@ proxies:
   servername: apple.com
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 46.17.44.216
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -57,63 +50,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 176.32.33.254
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 9f6635t.msk1.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
-  tls: true
-  reality-opts:
-    public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
-    short-id: 0ea5f9d7955c3971
-  servername: 9f6635t.msk1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 185.147.27.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
-  flow: xtls-rprx-vision
-  tls: true
-  servername: user-6a917f32.noooo.win
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -126,6 +63,34 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 213.165.56.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0d08709-093d-45dc-ac6f-fd18890fa2c5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: c8813f516bbb12c4
+  servername: freede.aiage.work
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 45.91.52.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
+  tls: true
+  reality-opts:
+    public-key: _UKyZZvF2cvo6qev4VY-QoOyzqE8cGT3hciD0g--sD8
+    short-id: 07e197719352d606
+  servername: 0f5857g.msk1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fb78f1bc0355
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,10 +103,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -154,9 +115,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 rules:
 - MATCH,PROXIES

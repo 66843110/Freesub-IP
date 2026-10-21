@@ -5,37 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 13.134.170.98
-  port: 22223
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
+  tls: true
+  servername: v.poker2025.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: v.poker2025.dpdns.org
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 3.11.48.149
-  port: 22223
+  server: 34.245.155.44
+  port: 443
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  server: 13.134.170.98
-  port: 22222
+  server: 34.253.145.77
+  port: 443
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  server: 51.24.15.27
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
   server: ie1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: ie1.dedushka.top
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +53,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +62,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
