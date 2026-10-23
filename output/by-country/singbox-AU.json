@@ -4,17 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "104.25.0.1",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime39.workers.dev"
-        }
+      "server": "158.178.137.129",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
@@ -55,30 +57,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "158.178.137.129",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -87,8 +72,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

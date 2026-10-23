@@ -41,21 +41,14 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
+  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: fc994ae7eb10
-  servername: www.tradingview.com
-  client-fingerprint: random
-- name: 🇺🇦 乌克兰 (Ukraine) 05 - xiaohe
-  server: 130.0.235.254
-  port: 17781
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 955df40f8ffc4713b709ffe36ca4bb7a
+    short-id: 2a80364e93d9
+  servername: www.foxsports.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +58,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +67,5 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 05 - xiaohe
 rules:
 - MATCH,PROXIES
