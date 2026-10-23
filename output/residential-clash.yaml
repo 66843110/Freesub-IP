@@ -15,22 +15,14 @@ proxies:
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: xn--b6gac.eu.org
-  port: 443
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: hinet1.2yly.com
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -39,14 +31,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +40,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +48,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
