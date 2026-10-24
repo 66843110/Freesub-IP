@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 162.249.125.133
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: 46.28.67.55
   port: 443
@@ -33,9 +30,22 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: 185.156.44.99
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  server: ro1.accessboy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
+    short-id: 1c5869a95671bcb0
+  servername: ro1.accessboy.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   server: 82.117.255.174
   port: 443
   udp: true
@@ -47,14 +57,7 @@ proxies:
     public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
