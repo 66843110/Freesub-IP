@@ -4,12 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "server": "v.poker2025.dpdns.org",
+      "server_port": 443,
+      "uuid": "9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "v.poker2025.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "v.poker2025.dpdns.org"
+        }
+      }
     },
     {
       "type": "selector",
