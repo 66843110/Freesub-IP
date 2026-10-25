@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 104.17.147.19
-  port: 443
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
