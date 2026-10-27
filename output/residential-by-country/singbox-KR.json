@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "104.17.128.155",
+      "server": "104.18.40.35",
       "server_port": 443,
       "uuid": "9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
       "tls": {
