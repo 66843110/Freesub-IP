@@ -16,6 +16,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
