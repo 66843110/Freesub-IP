@@ -4,27 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: chatgpt.com
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 172.64.145.111
   port: 443
   udp: true
   type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
+  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
   tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  servername: v.poker2025.dpdns.org
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /drift
+    path: /?ed=2048
     headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+      Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 218.237.185.234
-  port: 4652
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 - name: 🇮🇳 印度 (India) 03 (家宽) - xiaohe
   server: 122.176.216.52
   port: 443
@@ -34,13 +35,20 @@ proxies:
   tls: true
   servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
   server: 155.117.19.17
   port: 443
   udp: true
@@ -55,18 +63,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

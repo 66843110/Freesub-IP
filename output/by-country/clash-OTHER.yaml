@@ -5,42 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.0.1
-  port: 2052
+  server: cf.0sm.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /ws
     headers:
-      Host: eu02.123450908.xyz
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.16.0.1
-  port: 2052
+  server: cf.0sm.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /ws
     headers:
-      Host: eu02.123450908.xyz
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 172.67.156.147
-  port: 443
+  server: cf.0sm.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws?ed=2048
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
