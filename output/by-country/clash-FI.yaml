@@ -23,6 +23,27 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 45.144.52.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  tls: true
+  servername: b.fi-1.bnc-gt.co.uk
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 153.76.194.118
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -35,22 +56,21 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 65.109.211.81
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 78.17.27.137
   port: 8443
   udp: true
@@ -62,57 +82,6 @@ proxies:
     short-id: a05ccbf2edb5ebd1
   servername: www.aalto.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 65.109.210.221
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 45.144.52.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: tun.xelnivo.ir
-  port: 2044
-  udp: true
-  type: vmess
-  uuid: f6547466-a44a-41e7-9b71-473c5bf05723
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: 196.196.204.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,8 +94,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -139,7 +106,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
