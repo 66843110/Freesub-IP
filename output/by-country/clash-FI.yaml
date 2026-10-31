@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 153.76.194.118
+  server: finland.biznes.lol
   port: 8443
   udp: true
   type: hysteria2
@@ -13,6 +13,17 @@ proxies:
   sni: finland.biznes.lol
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -25,8 +36,20 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.210.221
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 78.17.27.137
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  tls: true
+  reality-opts:
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+    short-id: a05ccbf2edb5ebd1
+  servername: www.aalto.fi
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -40,7 +63,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 65.109.211.81
   port: 465
   udp: true
@@ -55,30 +78,6 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 178.72.185.235
-  port: 40446
-  udp: true
-  type: vless
-  uuid: 572b3d30-3ced-4b88-9e06-4241f124cc88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
-    short-id: d4e5f60718293a4b
-  servername: www.booking.com
-  client-fingerprint: qq
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
