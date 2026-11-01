@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 104.17.134.203
-  port: 443
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
-  tls: true
-  servername: v.poker2025.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v.poker2025.dpdns.org
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 125.227.86.45
   port: 443
@@ -30,14 +22,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
   port: 443
   udp: true
@@ -48,36 +33,6 @@ proxies:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 (家宽) - xiaohe
-  server: 178.104.70.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
-  tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇮🇳 印度 (India) 06 (家宽) - xiaohe
-  server: 122.176.216.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,10 +40,7 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 05 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,9 +48,6 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 05 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
