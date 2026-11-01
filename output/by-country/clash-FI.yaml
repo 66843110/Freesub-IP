@@ -16,13 +16,20 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: finland.biznes.lol
-  port: 8443
+  server: 65.109.211.81
+  port: 465
   udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 31.77.199.147
   port: 4443
@@ -37,18 +44,6 @@ proxies:
   servername: images.unsplash.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 13.143.164.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: fl3.lenvex.cc
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 179.253.179.109
   port: 62083
   udp: true
@@ -58,21 +53,26 @@ proxies:
   servername: 177.3.220.159
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: ench-snet-app.w-ctrip.cn
+  port: 41184
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 65.109.211.81
-  port: 465
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   tls: true
-  servername: hw6.divarkhaghazi.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

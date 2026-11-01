@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "ae5338ae-9a70-58c9-3d47-7d54a5675715",
+      "tls": {
+        "enabled": true,
+        "server_name": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
       "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
       "server_port": 443,
       "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
@@ -24,18 +36,34 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 53004,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "ench-snet-app.w-ctrip.cn",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
