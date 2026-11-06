@@ -7,13 +7,37 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
       "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
@@ -21,15 +45,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
       "server": "217.30.10.44",
       "server_port": 9071,
       "method": "aes-256-cfb",
@@ -37,109 +53,38 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9042,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "S7KwUu7yBy58S3Ga"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 09 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 10 - xiaohe",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "145.63.143.205",
-      "server_port": 8444,
-      "uuid": "35c9f200-7520-4005-b78e-f8a2fb9f68f7",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.meshbeat.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/devices/10be32b380/telemetry",
-        "headers": {
-          "Host": "pl1.meshbeat.online"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaohe",
-      "server": "193.111.117.16",
-      "server_port": 8443,
-      "uuid": "87ed57d3-6449-43eb-b600-31f89f2d967c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.cloudvienta.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "U-o0tnrGfNiuqKG9T1hHVZBrEV_SRmBLW4zGGefVgVE",
-          "short_id": "699312c8a633115e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaohe",
-      "server": "193.111.117.16",
-      "server_port": 8445,
-      "uuid": "87ed57d3-6449-43eb-b600-31f89f2d967c",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.cloudvienta.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "U-o0tnrGfNiuqKG9T1hHVZBrEV_SRmBLW4zGGefVgVE",
-          "short_id": "699312c8a633115e"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-reality"
+        "insecure": false
       }
     },
     {
@@ -154,7 +99,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
