@@ -28,15 +28,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 144.31.109.158
-  port: 4444
+  server: fn1s.sublinkplas.ir
+  port: 53731
   udp: true
-  type: hysteria2
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tztS0JGqX91pDVi5g8QyffaUPJlPUnWm
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 104.24.0.1
+  server: 188.114.96.3
   port: 2053
   udp: true
   type: trojan
