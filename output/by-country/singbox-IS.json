@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
+      "server": "8.6.112.0",
+      "server_port": 8443,
+      "uuid": "8eb92a78-ec8d-4ff6-8a2d-8b801367be87",
+      "tls": {
+        "enabled": true,
+        "server_name": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 02 - xiaohe",
       "server": "93.95.226.159",
       "server_port": 28150,
       "uuid": "b4e69d67-9d41-417c-b465-ebf1591fb792",
@@ -14,7 +37,7 @@
         "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
+        "🇮🇸 冰岛 (Iceland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
+        "🇮🇸 冰岛 (Iceland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
