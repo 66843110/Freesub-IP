@@ -6,21 +6,23 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "103.172.116.191",
-      "server_port": 10203,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "1246e51a-97cd-4d5c-9842-76dd3420bbe2",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "investor.fb.com.r3xxe.eu.cc",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU",
-          "short_id": "f96b3b17a0f5b1fe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-tksi",
+        "headers": {
+          "Host": "investor.fb.com.r3xxe.eu.cc"
         }
       }
     },

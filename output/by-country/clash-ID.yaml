@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 103.172.116.191
-  port: 10203
+  server: 188.114.97.6
+  port: 443
   udp: true
   type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
   tls: true
-  reality-opts:
-    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
-    short-id: f96b3b17a0f5b1fe
-  servername: www.apple.com
+  servername: investor.fb.com.r3xxe.eu.cc
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: investor.fb.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,34 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com
-  port: 443
+  server: 104.18.14.19
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  sni: 78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
