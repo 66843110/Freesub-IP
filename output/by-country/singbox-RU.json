@@ -6,13 +6,16 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "200.102.183.57",
-      "server_port": 80,
+      "server": "200.102.183.50",
+      "server_port": 443,
       "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
       "tls": {
         "enabled": true,
-        "server_name": "68r2nrw6avta71yq.cdn.cachefleet.com",
+        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
         "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -26,16 +29,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "200.102.183.50",
-      "server_port": 443,
+      "server": "200.102.183.57",
+      "server_port": 80,
       "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
       "tls": {
         "enabled": true,
-        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
+        "server_name": "68r2nrw6avta71yq.cdn.cachefleet.com",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -75,7 +75,7 @@
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
     },
     {
       "type": "shadowsocks",
@@ -111,22 +111,21 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
-      "server": "104.171.135.229",
-      "server_port": 443,
-      "uuid": "Fluffy_VPN-Oth8rOq3",
-      "flow": "xtls-rprx-vision",
+      "server": "185.39.204.117",
+      "server_port": 10002,
+      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
       "tls": {
         "enabled": true,
-        "server_name": "absolute-disaster.org",
+        "server_name": "tr2.vpnjantit.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0",
-          "short_id": ""
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit"
       }
     },
     {
