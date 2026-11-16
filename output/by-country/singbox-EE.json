@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "201.8.71.252",
+      "server": "13.143.232.205",
       "server_port": 443,
-      "uuid": "a88d4614-2134-404c-9479-6aba1ca9cdfd",
+      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "70480at.ee3.h1clayd.click",
+        "server_name": "d4a338t.pl8.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pteJNuYbBCnVSyhYPlDbR9UZHIrnFzgAlsZGDNbwSD0",
-          "short_id": "d61fdf9e283664b8"
+          "public_key": "0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA",
+          "short_id": "b545243c33282b73"
         }
       }
     },
