@@ -6,14 +6,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "radar.cloudflare.com",
-      "server_port": 8080,
-      "uuid": "cfa71937-73d5-4eb8-9b25-eadecd944803",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "sh-harand.shcharand00.workers.dev"
+      "server": "212.102.38.25",
+      "server_port": 443,
+      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "udemy.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
+          "short_id": "e90360ec7cc61b20"
         }
       }
     },
