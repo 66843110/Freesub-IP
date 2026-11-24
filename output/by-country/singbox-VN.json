@@ -12,13 +12,17 @@
       "tls": {
         "enabled": true,
         "server_name": "xvxn1hkzf.mateflora.com",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-      "server": "103.163.24.22",
+      "server": "Kir3.crackerbinam.org",
       "server_port": 56026,
       "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
       "tls": {
@@ -26,7 +30,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,12 +40,20 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 03 - xiaohe",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
       ]
     },
     {
@@ -49,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
