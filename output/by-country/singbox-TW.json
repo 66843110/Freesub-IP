@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "t.me",
         "insecure": true
       }
     },
@@ -23,7 +23,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "off",
         "insecure": true
       }
     },
@@ -31,7 +31,7 @@
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
       "server": "dog-tw.kunlun01dns.com",
-      "server_port": 21037,
+      "server_port": 21036,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },

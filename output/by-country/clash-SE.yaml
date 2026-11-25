@@ -31,7 +31,6 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
@@ -58,28 +57,17 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 136.148.216.115
+  server: sajed.kdns.fr
   port: 443
   udp: true
   type: vless
-  uuid: 57a3fb3c-5788-4777-933e-882dd22f5b82
-  tls: true
-  reality-opts:
-    public-key: _c33IsYcvvy4t95zq8ydgtQ3pXpOK7eLdQqK3O7c2Ao
-    short-id: b684dc4aaba4a911
-  servername: ba0648t.se1.h1clayd.click
-  client-fingerprint: firefox
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
 - name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 92.63.189.39
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-0003-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: avelon.onl
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   server: 88.216.60.73
   port: 443
   udp: true
@@ -90,7 +78,7 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
   servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +91,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +103,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES
